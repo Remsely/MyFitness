@@ -12,14 +12,24 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="edu.samsungit.remsely.myfitness.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_search"
+        android:name="edu.samsungit.remsely.myfitness.ui.search.SearchFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="edu.samsungit.remsely.myfitness.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_time_table"
+        android:name="edu.samsungit.remsely.myfitness.ui.time_table.TimeTableFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="edu.samsungit.remsely.myfitness.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_timer"
+        android:name="edu.samsungit.remsely.myfitness.ui.timer.TimerFragment"
+        android:label="fragment_timer"
+        tools:layout="@layout/fragment_timer" />
 </navigation>

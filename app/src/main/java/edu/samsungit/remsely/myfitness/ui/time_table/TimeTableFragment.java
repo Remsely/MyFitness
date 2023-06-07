@@ -1,4 +1,4 @@
-package edu.samsungit.remsely.myfitness.ui.notifications;
+package edu.samsungit.remsely.myfitness.ui.time_table;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,20 +12,20 @@ import androidx.lifecycle.ViewModelProvider;
 
 import edu.samsungit.remsely.myfitness.databinding.FragmentNotificationsBinding;
 
-public class NotificationsFragment extends Fragment {
+public class TimeTableFragment extends Fragment {
 
     private FragmentNotificationsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        TimeTableViewModel timeTableViewModel =
+                new ViewModelProvider(this).get(TimeTableViewModel.class);
 
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        timeTableViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
